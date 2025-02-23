@@ -950,7 +950,7 @@ font-weight: bold;
     gap:5px;
 }
 
-.qty-btn {
+#qty-btn1,#qty-btn2,#qty-btn3,#qty-btn4 {
     width: 30px;
     height: 30px;
     background-color: #548e8b;

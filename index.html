@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pol_aar Bookstore Application-Cart</title>
+        <link rel="StyleSheet" type="text/css" href="polaar bookstore cart.css">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Pol_aar Bookstore Logo">
+            </div>
+
+            <div class="search-bar">
+                <label for="search" >~</label>
+                <input type="search" name="search" placeholder="🔍 search books,novels,authors,..." id="search">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <div class="nav-icons">
+                <a href="#" class="icon"><img src="account.jpg" alt="account">ACCOUNT</a>
+                <span class="divider"></span>
+                <a href="#" class="icon"><img src="cart.png" alt="cart">CART</a>
+                <span class="divider"></span>
+                <a href="#" class="icon"><img src="wishlist.png" alt="wish-list"> WISHLIST</a>
+            </div>
+        </header>
+        
+        <!--navigation bar 1-->
+
+        <nav>
+            <ul id="NavigationBar1">
+                <li><a href="file:///E:/AIDS/Web%20Technology-CM1605/CW/My%20works/images/polaar-bookstore-home.html" >HOME</a></li>
+                <li><a href="#" >PRODUCTS</a></li>
+                <li><a href="#" >SALES</a></li>
+                <li><a href="#" >CONTACT</a></li>
+                <li><a href="#" >ABOUT US</a></li>
+            </ul>
+        </nav>
+
+        <!--collapasable side bar-->
+
+                <input type="checkbox" id="toggle-sidebar" class="toggle-checkbox">
+                <label for="toggle-sidebar" class="toggle-button">☰ </label>
+                
+                <div class="sidebar">
+                        <h2 id="categories1">SHOP BY CATEGORY</h2>
+                        
+                        <div class="main-categories" id="main-menu">
+                            <ul id="NavigationBar2">
+                                <li><a href="#fiction-menu">Fiction & Fantasy<span id="next1"> > </span></a></li>
+                                <li><a href="#non-fiction-menu"> Non Fiction<span id="next"> > </span></a></li>
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">New Arrivals</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-categories" id="fiction-menu">
+                            <a href="#main-menu" class="back-btn"> ⬅ Fiction & Fantasy </a>
+                            <ul class="sub-1">
+                               <li><a href="#">Adventure</a></li> 
+                               <li><a href="#">Romance</a></li> 
+                               <li><a href="#">Crime, Mystery & Thriller</a></li> 
+                               <li><a href="#">Science Fiction & Fantasy</a></li> 
+                            </ul>
+                        </div>
+
+                        <div class="sub-categories" id="non-fiction-menu">
+                            <a href="#main-menu" class="back-btn">⬅ Non Fiction </a>
+                            <ul class="sub-1">
+                                <li><a href="#">Computer & IT</a></li>
+                                <li><a href="#">Science & Medicine</a></li>
+                                <li><a href="#">Economics</a></li>
+                                <li><a href="#">Entrepreneurship & Startups</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+        <!--Breadcrumb bar-->
+
+        <div class="breadcrumb-container">
+            <h2 class="page-title">CART</h2>
+            <br/>
+            <div class="breadcrumb">
+                <a href="file:///E:/AIDS/Web%20Technology-CM1605/CW/My%20works/images/polaar-bookstore-home.html">HOME</a> > <span class="current-page">CART</span>
+            </div>
+        </div>
+
+        <div class="cart-progress">
+            <div class="step-container">
+               <div class="stepactive"><span>1</span></div>
+               <span class="step-text">CART</span>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="step-container">
+                <div class="step"><span>2</span></div>
+                <span class="step-text">CHECK OUT</span>
+            </div>
+
+            <div class="line2"></div>
+            
+            <div class="step-container">
+                <div class="step"><span>3</span></div>
+                <span class="step-text">PAYMENT</span>
+            </div>
+
+            <div class="line2"></div>
+
+            <div class="step-container">
+                <div class="step"><span>4</span></div>
+                <span class="step-text">CONFIRMATION</span>
+            </div> 
+        </div>
+
+        
+
+        <div class="cart-container">
+        <!--Apply coupon-->
+            <div class="apply-coupon">
+                <h2>Apply Coupons</h2>
+                <input type="text" placeholder="Coupon code">
+                <button class="apply-btn">Apply</button>
+                <br/>
+                <br/>
+                <h3>Price Details</h3>
+                <div class="price-details">
+                        <p>Subtotal :<span class="price">$ 100.06</span></p>
+                        <p>Discount :<span class="price">$ 0.00</span></p>
+                        <p>Total :<span class="price">$ 100.06</span></p>
+                </div>
+                <br/>
+                <br/>
+                <button class="checkout-btn">Proceed To Checkout</button>
+            </div>
+
+            <div class="left-section">
+
+                <!--collecting-method-->
+
+                <div class="collecting-method">
+                    <h2>Select Collecting Method</h2>
+                    <div class="method-option">
+                        
+                        <label class="method">
+                            <input type="radio" id="delivery" name="collect-method">
+                            <img src="islandwidedelivery.png" alt="Delivery icon">
+                            <span>Delivery</span>
+                        </label>
+        
+                        <label class="method">
+                            <input type="radio" id="store" name="collect-method">
+                            <img src="shoppingbag.png" alt="Store icon">
+                            <span>Collect From Store</span>
+                        </label>
+                        
+                    </div>
+                </div>
+
+                <!--cart-items-->
+
+                <div class="cart-items">
+                    <h2>Items In Your Cart</h2>
+                    <br/>
+                    <br/>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="item">Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td class="book-info">
+                                    <img src="P_4.jpg" alt="Never-Never">
+                                    <a href="book-details.html" class="book-link">Never Never</a>
+                                </td>
+                                <td>$ 43.46</td>
+                                <td>
+                                    <div class="quantity-control">
+                                        <button class="qty-btn"> - </button>
+                                        <input type="number" value="1" min="1" max="1">
+                                        <button class="qty-btn"> + </button>
+                                    </div>
+                                </td>
+                                <td class="Subtotal">$ 43.46</td>
+                                <td><span class="remove"> × </span></td>
+                            </tr>
+        
+                            <tr>
+                                <td class="book-info">
+                                    <img src="F_4.jpg" alt="The Crash">
+                                    <a href="book-details.html" class="book-link">The Crash</a>
+                                </td>
+                                <td>$ 56.60</td>
+                                <td>
+                                    <div class="quantity-control">
+                                        <button class="qty-btn"> - </button>
+                                        <input type="number" value="1" min="1" max="1">
+                                        <button class="qty-btn"> + </button>
+                                    </div>
+                                </td>
+                                <td class="Subtotal">$ 56.60</td>
+                                <td><span class="remove"> × </span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+        
+            </div>
+            
+        </div>
+        <a href="file:///E:/AIDS/Web%20Technology-CM1605/CW/My%20works/images/polaar-bookstore-home.html" class="continue-shopping"> Continue Shopping >></a>
+    
+
+        <!--footer-->
+
+        <footer>
+            <div class="footer-container">
+                
+                <div class="logo-section">
+                    <img src="logo.png" alt="Pol_aar Bookstore Logo">
+                    
+                    <div class="footer-left-icons">
+                    
+                        <div class="footer-icon">
+                            <img src="network.png" alt="network"><span>webadmin@pol_aar.lk</span>
+                        </div>
+        
+                        <div class="footer-icon">
+                            <img src="phone.png" alt="phone"><span>011-2053109</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-column">
+                    <h3 class="dropdown-title">Quick Help</h3>
+                    <ul class="dropdown-list">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3 class="dropdown-title">Policy</h3>
+                    <ul class="dropdown-list">
+                        <li><a href="#">Refund & Return Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="feedback-section">
+                    <h3>Feed Back</h3>
+                    <p>Share your experience,book<br/> suggestions,or any issues to<br/> help us improve!</p>
+                    <form>
+                        <label for="email">~</label>
+                        <input type="email" name="email" placeholder="Enter your email" id="email" required="">
+                        <label for="submit">.</label>
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F&_rdc=1&_rdr#"><img src="footer1.jpg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="footer2.jpg" alt="Instergram"></a>
+                    <a href="https://x.com/twitter?lang=en&mx=2"><img src="footer3.jpg" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/"><img src="footer4.jpg" alt="YouTube"></a>
+                </div>
+            
+                <p>Copyright © 2024 Pol_aar Book Store. All Rights Reserved.</p>
+    
+                <div class="payment-icons">
+                    <img src="pay1.jpg" alt="PayPal">
+                    <img src="pay2.jpg" alt="MasterCard">
+                    <img src="pay3.jpg" alt="Visa">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
